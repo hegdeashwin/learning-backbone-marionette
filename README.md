@@ -1,4 +1,6 @@
 # learning-backbone-marionette
+[The kit is under development; Things will get updated on daily basics]
+
 This training kit has been developed to learn the basics of Marionette - Backbone's framework and for those who:
 * Already have the basic knowledge/experience of Backbone.js;
 * Who wants to simplified Backbone application code with robust views;
