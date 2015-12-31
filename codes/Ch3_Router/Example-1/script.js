@@ -16,7 +16,8 @@
         console.log("LOG: Blank route got called");
       },
       "dashboard": "dashboard",
-      "about": "about"
+      "about": "about",
+      "book/:pageNo/read": "readBook"
     },
 
     dashboard: function() {
@@ -25,6 +26,10 @@
 
     about: function() {
       console.log("LOG: About route got called");
+    },
+
+    readBook: function(pageNo) {
+      console.log("LOG: You are reading book page no ", pageNo);
     }
 
   });
