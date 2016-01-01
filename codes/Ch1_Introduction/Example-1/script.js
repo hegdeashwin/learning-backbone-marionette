@@ -34,7 +34,7 @@
   });
 
   /**
-   * Start the application, after the application configuration id done.
+   * Start the application, after the application configuration is done.
    * It takes a optional argument
    */
   app.start();
