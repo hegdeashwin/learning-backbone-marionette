@@ -8,7 +8,13 @@
 
     initialize: function(options) {
       console.log("LOG: Object got initialize");
-      console.log("LOG: options object: ", options);
+      console.log("LOG: (options) object - ", options);
+
+      this.fetchObjOpt();
+    },
+
+    fetchObjOpt: function() {
+      console.log("LOG: (this.options) object - ", this.options);
     }
 
   });
