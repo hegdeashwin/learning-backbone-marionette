@@ -25,9 +25,10 @@ This training kit has been developed to learn the basics of Marionette - Backbon
 | |2.5 - Layout|
 | |2.6 - Region|
 |3|Router|
-|4|Controller|
+|4|Controller ```[Deprecated]```|
 |5|Object|
-|6|Module|
+|6|Module ```[Deprecated]```|
+|7|Utilities|
 
 ## How to use training kit examples
 Clone the repository and start running the examples in your browser and browse the codes with ready commits or [Download this repository](https://github.com/hegdeashwin/learning-backbone-marionette/archive/master.zip)
