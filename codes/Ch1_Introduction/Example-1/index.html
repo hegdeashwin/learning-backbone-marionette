@@ -2,13 +2,34 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Example 1</title>
+    <title>Eg 1: Introduction</title>
   </head>
   <body>
 
+    <div class="usageDirection">
+      <h1>Learning Backbone Marionette</h1>
+      <h2>Ch1: Introduction</h2>
+      <h3>How to run this example?</h3>
+      <ol>
+        <li>Open index.html in browser</li>
+        <li>Press F12, go to console tab</li>
+        <li>Type "Backbone.Marionette" &amp; understand the Backbone.Marionette object + console logs to understand the flow</li>
+      </ol>
+    </div>
+
+    <!-- Step 1: Include jQuery, due to light dependence on jQuery for DOM manipulation -->
     <script src="../../../libs/jquery.min.js"></script>
+
+    <!-- Step 2: Include Underscore, should always included before Backbone.js because its dependence -->
     <script src="../../../libs/underscore.min.js"></script>
+
+    <!-- Step 3: Include Backbone.js -->
     <script src="../../../libs/backbone.min.js"></script>
+
+    <!-- Step 4: Include Backbone.Marionette
+    or install with Bower (bower install marionette)
+    or install with npm (npm install backbone.marionette)
+    -->
     <script src="../../../libs/backbone.marionette.min.js"></script>
 
     <script src="script.js"></script>
