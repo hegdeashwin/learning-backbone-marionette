@@ -9,12 +9,12 @@
     initialize: function() {
       console.log("LOG: Object got initialize");
 
-      this.on("sayHello", this.sayHello);
+      this.on("sayHello", this.sayHelloFunc);
 
       this.triggerMethod("sayHello", "Hello World!");
     },
 
-    sayHello: function(msg) {
+    sayHelloFunc: function(msg) {
       console.log("LOG: Message - ", msg);
     }
 
