@@ -41,6 +41,17 @@ You can used any text editor which ever you are comfortable with on any operatin
 * Bracket
 * Notepad++
 
+## Contributors
+We really appreciate all kind of feedback and contributions. Thanks for using and supporting this project:
+[contributors](//github.com/hegdeashwin/learning-backbone-marionette/graphs/contributors)
+
+To request a feature or you find any typo errors, enhancements or questions; please feel free to post it on following link, or vote for the ones that are already registered.
+
+[https://github.com/hegdeashwin/learning-backbone-marionette/issues](github.com/hegdeashwin/learning-backbone-marionette/issues)
+
+Visit the following link to know about Backbone.Marionette development code in detail
+[http://marionettejs.com/annotated-src/backbone.marionette.html](http://marionettejs.com/annotated-src/backbone.marionette.html)
+
 ## License
 
 The MIT License (MIT)
