@@ -19,11 +19,10 @@ This training kit has been developed to learn the basics of Marionette - Backbon
 |1|Introduction|
 |2|Views|
 | |2.1 - Item|
-| |2.2 - Behavior|
+| |2.2 - Regions and Layout|
 | |2.3 - Collection|
 | |2.4 - Composite|
-| |2.5 - Layout|
-| |2.6 - Region|
+| |2.5 - Behavior|
 |3|Router|
 |4|Controller ```[Deprecated]```|
 |5|Object|
