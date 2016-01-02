@@ -2,18 +2,30 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Example 2</title>
+    <title>Eg 2: ItemView</title>
   </head>
   <body>
 
-    <div id="container">
-      <button class="showHelloMsg">Say Hello World</button>
+    <div class="usageDirection">
+      <h1>Learning Backbone Marionette</h1>
+      <h2>Ch2: Views - (2.1) ItemView</h2>
+      <h3>How to run this example?</h3>
+      <ol>
+        <li>Open index.html in browser</li>
+        <li>Press F12, go to console tab</li>
+        <li>See the console logs to understand the flow</li>
+      </ol>
     </div>
+    <hr />
 
+    <div id="first-container">
+      <!-- This button is within first-container (el) so event will get bind on this button -->
+      <button class="showHelloMsg">Say Hello World - This will work!</button>
+    </div>
     <br/>
-
+    <!-- Second-container is not within first-container, thus no event will get binded over here -->
     <div id="second-container">
-      <button class="showHelloMsg">Say Hello Ashwin</button>
+      <button class="showHelloMsg">Say Hello Ashwin - This will not work! (out of scope)</button>
     </div>
 
     <script src="../../../../libs/jquery.min.js"></script>
