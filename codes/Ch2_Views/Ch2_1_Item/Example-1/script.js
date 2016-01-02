@@ -14,7 +14,7 @@
    * Create an ItemView extending Marionette.ItemView.
    * An `ItemView` is a single item which may be represented as a Backbone Model or Collection.
    */
-  var MyView = Marionette.ItemView.extend({
+  var MasterView = Marionette.ItemView.extend({
 
     /**
      * `initialize` is a constructor function which gets called automatically once the instance is created
@@ -26,9 +26,9 @@
   });
 
   /**
-   * Creating MyView instance using `new`
+   * Creating MasterView instance using `new`
    */
-  new MyView();
+  new MasterView();
 
   app.start();
 

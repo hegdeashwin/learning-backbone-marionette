@@ -10,7 +10,7 @@
   var app = Marionette.Application.extend({});
   app = new app();
 
-  var MyView = Marionette.ItemView.extend({
+  var MasterView = Marionette.ItemView.extend({
 
     /**
      * el can be a DOM selector string or an element;
@@ -37,7 +37,7 @@
 
   });
 
-  new MyView();
+  new MasterView();
 
   app.start();
 
