@@ -18,30 +18,38 @@
     </div>
     <hr/>
 
+    <!-- main-container is a DOM element where container-template is going to get rendered -->
     <div id="main-container"></div>
 
+    <!-- container-template holds header, section and footer template content -->
     <script id="container-template" type="text/template">
       <header>
-        <div class="headerMenu"></div>
+        <div class="headerSection"></div>
       </header>
       <section>
-        <div class="contentMenu"></div>
+        <div class="contentSection"></div>
       </section>
       <footer>
-        <div class="footerMenu"></div>
+        <div class="footerSection"></div>
       </footer>
     </script>
 
+    <!-- header-template holds header content -->
     <script id="header-template" type="text/template">
       <h1>Header</h1>
+      <button>This is header</button>
     </script>
 
+    <!-- content-template holds main content -->
     <script id="content-template" type="text/template">
       <h2>Content</h2>
+      <button>This is Content</button>
     </script>
 
+    <!-- footer-template holds footer content -->
     <script id="footer-template" type="text/template">
       <h3>Footer</h3>
+      <button>This is footer</button>
     </script>
 
     <script src="../../../../libs/jquery.min.js"></script>
