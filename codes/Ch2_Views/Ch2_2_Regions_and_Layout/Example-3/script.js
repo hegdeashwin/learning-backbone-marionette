@@ -1,7 +1,6 @@
 /**
  * The goal of this file is to provide the basic understanding of
- * 1. How to use Marionette LayoutView method
- * 2. How to divide the view in to logic regions
+ * 1. Instead of predefining regions use addRegions method to dynamically add regions
  */
 
 (function() {
@@ -12,26 +11,68 @@
 
   /**
    * Creates Header Item view to hold header-template including header events binding
-   * As no `el` reference is provided #header-template will be rapped by div by default
+   * As `el` reference is provided #header-template will be rapped by respected el
    */
   var HeaderView = Marionette.ItemView.extend({
-    template: "#header-template"
+    el: ".headerSection",
+
+    template: "#header-template",
+
+    /**
+     * Header elements events binding
+     */
+    events: {
+      "click button": "detectHeader"
+    },
+
+    detectHeader: function() {
+      console.log("LOG: This is header section");
+    }
+
   });
 
   /**
    * Creates Content Item view to hold content-template including content events binding
-   * As no `el` reference is provided #content-template will be rapped by div by default
+   * As `el` reference is provided #content-template will be rapped by respected el
    */
   var ContentView = Marionette.ItemView.extend({
-    template: "#content-template"
+    el: ".contentSection",
+
+    template: "#content-template",
+
+    /**
+     * Content elements events binding
+     */
+    events: {
+      "click button": "detectContent"
+    },
+
+    detectContent: function() {
+      console.log("LOG: This is content section");
+    }
+
   });
 
   /**
    * Creates Footer Item view to hold footer-template including footer events binding
-   * As no `el` reference is provided #footer-template will be rapped by div by default
+   * As `el` reference is provided #footer-template will be rapped by respected el
    */
   var FooterView = Marionette.ItemView.extend({
-    template: "#footer-template"
+    el: ".footerSection",
+
+    template: "#footer-template",
+
+    /**
+     * Footer elements events binding
+     */
+    events: {
+      "click button": "detectFooter"
+    },
+
+    detectFooter: function() {
+      console.log("LOG: This is footer section");
+    }
+
   });
 
   /**
@@ -46,17 +87,6 @@
      */
     template: "#container-template",
 
-    /**
-     * Divided the "container-template" view in to logic predefined regions;
-     * As the container-template has header, section and footer as an element, so just assign it as value
-     * it can be selector or elements; The key will be used down below to use show method
-     */
-    regions: {
-      header: "header",
-      section: "section",
-      footer: "footer"
-    }
-
   });
 
   /**
@@ -64,6 +94,16 @@
    * and its regions
    */
   var masterLayout = new MasterLayoutView();
+
+  /**
+   * Dynamically added regions to instance instead of predefining them in LayoutView
+   */
+  masterLayout.addRegions({
+    header: "header",
+    section: "section",
+    footer: "footer"
+  });
+
   masterLayout.render();
 
   /**
