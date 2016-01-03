@@ -2,7 +2,7 @@
 
 ## Add examples for:
 * Inline comments in Object
-* Inline comments in Router
+* Inline comments in Router [Done]
 
 * Regions & Layout extend methods
 * Regions & Layout events
