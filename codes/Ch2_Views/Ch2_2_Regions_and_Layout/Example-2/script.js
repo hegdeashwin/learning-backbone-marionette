@@ -89,7 +89,7 @@
     template: "#container-template",
 
     /**
-     * Divided the "container-template" view in to logic regions;
+     * Divided the "container-template" view in to logic predefined regions;
      * As the container-template has header, section and footer as an element, so just assign it as value
      * it can be selector or elements; The key will be used down below to use show method
      */
