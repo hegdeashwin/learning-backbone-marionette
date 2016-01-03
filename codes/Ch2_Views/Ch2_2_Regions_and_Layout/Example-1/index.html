@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Eg 1: Regions and Layout</title>
+  </head>
+  <body>
+
+    <div class="usageDirection">
+      <h1>Learning Backbone Marionette</h1>
+      <h2>Ch2: Views - (2.2) Regions and Layout</h2>
+      <h3>How to run this example?</h3>
+      <ol>
+        <li>Open index.html in browser</li>
+        <li>Press F12, go to console tab</li>
+        <li>See the console logs to understand the flow</li>
+      </ol>
+    </div>
+    <hr/>
+
+    <div id="main-container"></div>
+
+    <script id="container-template" type="text/template">
+      <header></header>
+      <section></section>
+      <footer></footer>
+    </script>
+
+    <script id="header-template" type="text/template">
+      <h1>Header</h1>
+    </script>
+
+    <script id="content-template" type="text/template">
+      <h2>Content</h2>
+    </script>
+
+    <script id="footer-template" type="text/template">
+      <h3>Footer</h3>
+    </script>
+
+    <script src="../../../../libs/jquery.min.js"></script>
+    <script src="../../../../libs/underscore.min.js"></script>
+    <script src="../../../../libs/backbone.min.js"></script>
+    <script src="../../../../libs/backbone.marionette.min.js"></script>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
