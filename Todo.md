@@ -1,7 +1,7 @@
 # Todo Tasks
 
 ## Add examples for:
-* Inline comments in Object
+* Inline comments in Object [Done]
 * Inline comments in Router [Done]
 
 * Regions & Layout extend methods
