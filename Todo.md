@@ -1,21 +1,32 @@
 # Todo Tasks
 
 ## Add examples for:
-* Inline comments in Object [Done]
-* Inline comments in Router [Done]
 
-* Regions & Layout extend methods
-* Regions & Layout events
-* Regions & Layout destroy
+### ItemView:
+* Serialize data
+* Organizing UI elements
+* ModelEvents
+* CollectionEvents
+* Template less
+
+### Regions & Layout:
+* Extend methods
+* Events
+* Destroy
 * Communication between Regions
 
-* ItemView destroy [Done]
+### CollectionView:
+* Basic implementation
+* Events
 
-* CollectionView
-* CollectionView events
+### CompositeView:
+* Basic implementation
+* Events
 
-* CompositeView
-* CompositeView events
+### BehaviorView:
+* Basic implementation
+* Events
 
-* BehaviorView
-* BehaviorView events
+### Router:
+* Add routes at runtime [Done]
+* Events [Done]
