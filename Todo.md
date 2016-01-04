@@ -9,7 +9,7 @@
 * Regions & Layout destroy
 * Communication between Regions
 
-* ItemView destroy
+* ItemView destroy [Done]
 
 * CollectionView
 * CollectionView events
