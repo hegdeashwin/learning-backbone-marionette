@@ -28,5 +28,5 @@
 * Events
 
 ### Router:
-* Add routes at runtime
+* Add routes at runtime [Done]
 * Events [Done]
