@@ -1,3 +1,8 @@
+/**
+ * The goal of this file is to provide the basic understanding of
+ * 1. Subscribing and triggering events internal - 1 way
+ */
+
 (function() {
   'use strict';
 
@@ -9,8 +14,14 @@
     initialize: function() {
       console.log("LOG: Object got initialize");
 
+      /**
+       * Subscribe `sayHello` event
+       */
       this.on("sayHello", this.sayHelloFunc);
 
+      /**
+       * Triggering `sayHello` event and pass the message string
+       */
       this.triggerMethod("sayHello", "Hello World!");
     },
 
