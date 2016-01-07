@@ -36,6 +36,7 @@
      * `name` is route name
      * `path` supposed to be the URL path, but for some reason, it’s mostly undefined here
      * `args` is an array of URL fragments
+     * For more info please ref http://marionettejs.com/annotated-src/backbone.marionette.html#section-421
      */
     onRoute: function(name, path, args) {
       console.log("LOG: onRoute event got triggered!");
