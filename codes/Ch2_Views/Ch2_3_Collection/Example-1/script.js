@@ -2,7 +2,6 @@
  * The goal of this file is to provide the basic understanding of
  * 1. How to create CollectionView
  * 2. How to pass data to Backbone ItemView, CollectionView via Backbone Model and Collection
- * 3.
  */
 
 (function() {
