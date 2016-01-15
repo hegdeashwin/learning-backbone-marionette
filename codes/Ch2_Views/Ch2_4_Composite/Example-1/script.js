@@ -1,8 +1,6 @@
 /**
  * The goal of this file is to provide the basic understanding of
- * 1. How to create CollectionView
- * 2. How to pass data to Backbone ItemView, CollectionView via Backbone Model and Collection
- * 3.
+ * 1. How to create CompositeView
  */
 
 (function() {
@@ -35,7 +33,7 @@
   });
 
   /**
-   * Create an Marionette ItemView and will be passed to CollectionView as a childView
+   * Create an Marionette ItemView and will be passed to CompositeView as a childView
    * ItemView are used to hold a single Model
    */
   var EmployeeItemView = Marionette.ItemView.extend({
@@ -45,12 +43,12 @@
   });
 
   /**
-   * Create an Marionette CollectionView and will be pass `EmployeeItemView` as a childView
-   * CollectionView are used to hold multiple models
+   * Create an Marionette CompositeView and will be pass `EmployeeItemView` as a childView
+   * CompositeView are used to hold multiple models
    */
-  var EmployeesCollectionView = Marionette.CollectionView.extend({
+  var EmployeesCompositeView = Marionette.CompositeView.extend({
     initialize: function() {
-      console.log("LOG: CollectionView got initialize!");
+      console.log("LOG: CompositeView got initialize!");
     },
 
     tagName: "table",
@@ -61,7 +59,11 @@
      * Notes: If you do not specify a childView, an exception will be thrown
      * stating that you must specify a childView.
      */
-    childView: EmployeeItemView
+    childView: EmployeeItemView,
+
+    childViewContainer: "tbody",
+
+    template: "#employee-table"
   });
 
   /**
@@ -70,10 +72,10 @@
   var companyEmployees = new EmployeeCollection(employees);
 
   /**
-   * Create an instance of Marionette CollectionView `EmployeesCollectionView` and pass the
+   * Create an instance of Marionette CompositeView `EmployeesCompositeView` and pass the
    * above Collection instance to collection object
    */
-  var companyEmployeesView = new EmployeesCollectionView({
+  var companyEmployeesView = new EmployeesCompositeView({
     collection: companyEmployees
   });
 
