@@ -3,7 +3,7 @@
 This training kit has been developed to learn the basics of Marionette - Backbone's framework and for those who:
 * Already have the basic knowledge/experience of Backbone.js;
 * Who wants to simplified Backbone application code with robust views;
-* Those who want to understand basic of Marionette framework before going to architecture solutions;
+* Those who want to understand basic of Marionette framework before moving towards the architecture solutions;
 
 ## Prerequisites
 * Understanding/Experience of Backbone.js;
@@ -31,7 +31,11 @@ This training kit has been developed to learn the basics of Marionette - Backbon
 ## How to use training kit examples
 Clone the repository and start running the examples in your browser and browse the codes with ready commits or [Download this repository](https://github.com/hegdeashwin/learning-backbone-marionette/archive/master.zip)
 
-Experiment with the code online powered by JSFiddle is in milestone.
+> Experiment with the code online powered by JSFiddle or JSBin is in milestone.
+
+## Resources
+
+A devtool for Marionette [Marionette Inspector](https://chrome.google.com/webstore/detail/marionette-inspector/fbgfjlockdhidoaempmjcddibjklhpka)
 
 ## Recommended text editor
 You can used any text editor which ever you are comfortable with on any operating systems. But when it comes to JavaScript based project I personally recommend the following editors as per the priority.
